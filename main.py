@@ -31,7 +31,7 @@ bbdd = [
 ]
 
 while True:
-    numero = int(input("Introduce el numero de alumnos que va a añadir: "))
+    numero = input("Introduce el numero de alumnos que va a añadir: ")
     try:
         numero = int(numero)
         if numero >= 0:
@@ -41,7 +41,7 @@ while True:
             print("*************** Mayores de edad ***************")
             mostrar_adultos(bbdd)
             sys.exit()
-except Exception:
-    print("Debe introducir un numero entero")
-    
+    except Exception:
+        print("Debe introducir un numero entero")
+
 
